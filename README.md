@@ -245,7 +245,7 @@ MIT - Libre para uso educativo y comercial
 **Institución**: Universidad Tecnológica de Tijuana  
 **Materia**: Desarrollo Web Profesional  
 **Docente**: Mike Cardona (@mikecardona076)  
-**Desarrollo**: [Tu Nombre]  
+**Desarrollo**: Cid Hernandez Antonio  
 **Fecha**: Febrero 2026  
 **Versión**: 1.0.0
 import reactDom from 'eslint-plugin-react-dom'
