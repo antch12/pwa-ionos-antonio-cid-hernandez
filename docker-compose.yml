@@ -1,0 +1,30 @@
+services:
+  pwa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pwa-task-manager
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Montar certificados SSL (comentado por defecto, usar en producción)
+      # - ./ssl/cert.pem:/etc/nginx/ssl/cert.pem:ro
+      # - ./ssl/key.pem:/etc/nginx/ssl/key.pem:ro
+      # Logs
+      - ./logs/nginx:/var/log/nginx
+    environment:
+      - TZ=America/Mexico_City
+    restart: unless-stopped
+    networks:
+      - pwa-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health.txt"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+networks:
+  pwa-network:
+    driver: bridge

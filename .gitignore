@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Development
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+*.pdb
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Cache
+.next/
+.cache/
+.eslintcache
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# SSL (usar gitignore local si necesario)
+ssl/*.pem
+ssl/*.key
+
+# Database
+*.db
+*.sqlite
+
+# Testing
+.nyc_output/
+coverage/
+
+# Misc
+*.gem
+*.rbc
+*.pb.go
+.python-version
+.ruby-version
+.env.production.local
+
+# Node modules
+node_modules/
+
+# Archivos locales que no son necesarios
+local.settings.json
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
